@@ -24,14 +24,43 @@
                     <li class="main-nav-items">Home</li>
                     <li class="main-nav-items">Dashboard</li>
                     <li class="main-nav-items">My course</li>
-                    <li class="main-nav-items" id="home-item"><span>Home</span>
-                        <span class="material-symbols-outlined down-arrow">
+                    <li class="main-nav-items" id="home-item">
+                        <span>Home</span>
+                        <span class="material-symbols-outlined down-arrow" id="home-nav">
                             expand_more
                         </span>
+                        <div class="new-ele"></div>
                     </li>
                 </ul>
             </div>
+
             <div class="profile-section">
+                <div class="profile-section-list-mob">
+                    <div class="mobile-nav">
+                        <div class="aside-nav">
+
+                            <span class="material-symbols-outlined">
+                                density_medium
+                            </span>
+
+
+                        </div>
+                        <div class="profile-nav-mob">
+                            <span class="material-symbols-outlined">
+                                notifications
+                            </span>
+                            <span class="material-symbols-outlined">
+                                maps_ugc
+                            </span>
+                            <img src="./images/avatar.png" alt="default Profile" class="profile-img" />
+
+                            <span class="material-symbols-outlined down-arrow">
+                                expand_more
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="profile-section-list">
                     <span class="material-symbols-outlined">
                         notifications
@@ -41,9 +70,10 @@
                     </span>
                     <img src="./images/avatar.png" alt="default Profile" class="profile-img" />
 
-                    <span class="material-symbols-outlined down-arrow">
+                    <span class="material-symbols-outlined down-arrow" id="profile-nav">
                         expand_more
                     </span>
+                    <div class="pro-nav"></div>
                 </div>
             </div>
         </nav>
@@ -71,74 +101,100 @@
                 <h1>Courses</h1>
                 <p>Expand all</p>
                 <div class="course-items">
-                    <div class="course-item">
-                        <span class="material-symbols-outlined left-arrow">
-                            arrow_right
-                        </span>
-                        <span class="course-item-heading"><a>
-                            Welcome
-                        </a></span>
-                    </div>
-                    <div class="course-item">
-                        <span class="material-symbols-outlined left-arrow">
-                            arrow_right
-                        </span>
-                        <span class="course-item-heading"><a>Community</a></span>
-                    </div>
-                    <div class="course-item">
-                        <span class="material-symbols-outlined left-arrow">
-                            arrow_right
-                        </span>
-                        <span class="course-item-heading"><a>External</a></span>
-                    </div>
-                    <div class="course-item">
-                        <span class="material-symbols-outlined left-arrow">
-                            arrow_right
-                        </span>
-                        <span class="course-item-heading"><a>Teams</a></span>
-                    </div>
-                    <div class="course-item">
-                        <span class="material-symbols-outlined left-arrow">
-                            arrow_right
-                        </span>
-                        <span class="course-item-heading"><a>Products</a></span>
-                    </div>
-                    <div class="course-item">
-                        <span class="material-symbols-outlined left-arrow">
-                            arrow_right
-                        </span>
-                        <span class="course-item-heading"><a>Templates</a></span>
-                    </div>
-                    <div class="course-item">
-                        <span class="material-symbols-outlined left-arrow">
-                            arrow_right
-                        </span>
-                        <span class="course-item-heading"><a>Registation</a></span>
-                    </div>
-                    <div class="course-item">
-                        <span class="material-symbols-outlined left-arrow">
-                            arrow_right
-                        </span>
-                        <span class="course-item-heading"><a>Certificate</a></span>
-                    </div>
-                    <div class="course-item">
-                        <span class="material-symbols-outlined left-arrow">
-                            arrow_right
-                        </span>
-                        <span class="course-item-heading"><a>Elective Library</a></span>
-                    </div>
-                    <div class="course-item">
-                        <span class="material-symbols-outlined left-arrow">
-                            arrow_right
-                        </span>
-                        <span class="course-item-heading"><a>CNCTRAIN Moodle Instance</a></span>
-                    </div>
+                    <details id="myDetails" class="course-item">
+                        <summary class="course-item-heading">Welcome</summary>
+                        <div class="hidden-course-item">
+                            <p>Onboarding Courses</p>
+                            <p>Evalution Courses</p>
+                            <p>LOR Courses</p>
+                            <p>Wrap session for Abhyaz Intern</p>
+                            <p>Exist Courses</p>
+                        </div>
+                    </details>
+                    <details id="myDetails" class="course-item">
+                        <summary class="course-item-heading">Community</summary>
+                        <div class="hidden-course-item">
+                            <p>Abhyaz Community</p>
+                        </div>
+                    </details>
+                    <details id="myDetails" class="course-item">
+                        <summary class="course-item-heading">External</summary>
+                        <div class="hidden-course-item">
+                            <p>Priya Vasudevan's Virtual Office</p>
+                            <p>Petprakalp's Virtual Office</p>
+                        </div>
+                    </details>
+                    <details id="myDetails" class="course-item">
+                        <summary class="course-item-heading">Teams</summary>
+                        <div class="hidden-course-item">
+                            <p>Abhyaz Core Team</p>
+                            <p>Knowledge Transfer</p>
+                            <p>CNCTrain Library Stakeholders</p>
+                            <p>Review Meeting</p>
+                        </div>
+                    </details>
+                    <details id="myDetails" class="course-item">
+                        <summary class="course-item-heading">Product</summary>
+                        <div class="hidden-course-item">
+                            <p>E-Learning</p>
+                            <p>Engineering - Portfolio Outcomes</p>
+                            <p>CNCTrain Library</p>
+                        </div>
+                    </details>
+                    <details id="myDetails" class="course-item">
+                        <summary class="course-item-heading">Templates</summary>
+                        <div class="hidden-course-item">
+                            <p>Activity Templates</p>
+                            <p>Course Templates</p>
+                            <p>Work-Flow Templates</p>
+                            <p>Solopreneur</p>
+                        </div>
+                    </details>
+                    <details id="myDetails" class="course-item">
+                        <summary class="course-item-heading">Registation</summary>
+                        <div class="hidden-course-item">
+                            <p>ASP</p>
+                            <p>ATP</p>
+                            <p>Candidate</p>
+                        </div>
+                    </details>
+                    <details id="myDetails" class="course-item">
+                        <summary class="course-item-heading">Certificate</summary>
+                        <div class="hidden-course-item">
+                            <p>Abhyaz Internship Completion</p>
+                            <p>Interns Bonafide Certificate</p>
+                            <p>Internship Extension Certificate</p>
+                        </div>
+                    </details>
+                    <details id="myDetails" class="course-item">
+                        <summary class="course-item-heading">Elective Library</summary>
+                        <div class="hidden-course-item">
+                            <p>Precision component Machining in Turning</p>
+                            <p>Precision component Machining in Milling</p>
+                            <p>Robotic Simple Application</p>
+                            <p>Robotic Intermediate Application</p>
+                            <p>Hydraulic Circuit and It's application</p>
+                            <p>Pneumatic Circuit and It's application</p>
+                            <p>Sensors and it's application</p>
+                            <p>Digital Twins Manufacturing Plant Design</p>
+                            <p>Digital Twins Manufacturing CIMSIM</p>
+                            <p>Mechatronics Overview</p>
+                            <p>IOT Introduction</p>
+                        </div>
+                    </details>
+                    <details id="myDetails" class="course-item">
+                        <summary class="course-item-heading">CNCTRAIN Moodle Instance</summary>
+                        <div class="hidden-course-item">
+                            <p>Intern to access CNCTRAIN</p>
+
+                        </div>
+                    </details>
                 </div>
             </div>
 
         </section>
     </main>
-
+    <script src="index.js"></script>
 </body>
 
 </html>

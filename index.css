@@ -1,6 +1,5 @@
 body {
     padding: 0;
-    height: 990px;
 
     margin: 0;
     box-sizing: border-box;
@@ -12,13 +11,19 @@ header {
     margin: auto;
     background-color: whitesmoke;
 }
-a{
+p{
+    margin: 5px;
+}
+
+a {
     cursor: pointer;
 }
-a:hover{
-text-decoration: underline;
+
+a:hover {
+    text-decoration: underline;
 
 }
+
 li {
 
     list-style: none;
@@ -50,6 +55,7 @@ li {
 
 .main-nav {
     width: 67%;
+    position: relative;
     /* background-color: brown; */
 }
 
@@ -69,6 +75,29 @@ li {
 
 }
 
+.new-element {
+    position: relative;
+    top: 5px;
+    left: 335px;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border: 2px solid gainsboro;
+
+    width: 200px;
+}
+
+.new-element>div {
+    margin-top: 2px;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+
+.none {
+    display: none;
+}
+
 .main-nav-items:hover {
     background-color: rgb(228, 228, 228);
     text-decoration: underline;
@@ -81,12 +110,40 @@ li {
 
 .profile-section {
     width: 25%;
+    position: relative;
     /* background-color: blueviolet; */
 }
 
-.profile-section-list {
+.profile-navigation {
+    position: relative;
+    top: 7px;
+    right: 150px;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border: 2px solid gainsboro;
+    z-index: 100;
+    width: 300px;
+
+}
+
+.languages {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
+}
+
+.profile-navigation>div {
+    margin-top: 2px;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+
+.profile-section-list {
+
+    margin-left: 180px;
     padding: 10px;
 }
 
@@ -108,7 +165,8 @@ li {
     border-radius: 100%;
 }
 
-.doem-arrow {
+.down-arrow {
+    cursor: pointer;
     font-size: smaller;
     text-decoration: none;
 }
@@ -127,7 +185,7 @@ li {
 .welcome-heading {
     padding: 20px;
     color: red;
-    font-size: larger;
+    font-size: x-large;
 }
 
 .welcome-para {
@@ -205,8 +263,12 @@ li {
 
 .course-item {
     display: flex;
-    margin: 2px;
+    margin: 5px;
+    padding: 2px;
     justify-content: start;
+    color: gray;
+    
+    font-size: small;
 }
 
 .course-item-heading {
@@ -215,11 +277,127 @@ li {
     cursor: pointer;
 
 }
-.course-item-heading:hover{
+
+.hidden-course-item {
+    color: #2863AB;
+    font-size: smaller;
+    cursor: pointer;
+    padding-left: 30px;
+
+}
+
+.course-item-heading:hover {
     color: #1b4982;
     text-decoration: underline;
 }
 
 .left-arrow {
     color: gray;
+}
+
+.profile-section-list-mob {
+    display: none;
+}
+
+/* Responsive
+     for mobile */
+
+@media screen and (max-width: 480px) {
+    .main-content {
+        margin-top: 4rem;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .logo-part {
+        display: none;
+    }
+
+    .profile-section {
+        width: 100%;
+    }
+
+    .profile-section-list {
+        display: none;
+
+    }
+
+    .profile-section-list-mob {
+        display: block;
+    }
+
+    .profile-nav-mob {
+        display: flex;
+        justify-content: end;
+        padding: 10px;
+        margin: 10px;
+
+    }
+
+    .profile-nav-mob>span {
+        margin: 2px;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .aside-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-section {
+        width: 100%;
+        padding: 1px;
+    }
+
+    .welcome-heading {
+        padding: 5px;
+    }
+
+    .welcome-para {
+        padding: 5px;
+        font-size: x-small;
+    }
+
+
+    .search-bar>input {
+        padding: 2px;
+    }
+
+    .subscribe-div {
+
+        padding: 5px;
+    }
+
+    .subscribe-div>h1 {
+        padding: 2px;
+        font-size: medium;
+    }
+
+    .subscribe-div>p {
+        padding: 10px;
+    }
+
+    .subscribe-div>div {
+        padding: 5px;
+        font-size: x-small;
+    }
+
+    .course-div>h1 {
+        padding: 2px;
+        font-size: medium;
+    }
+
+    .course-div>p {
+        padding: 10px;
+    }
+
+
+
 }
